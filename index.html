@@ -1,25 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Vineet Yadav Portfolio</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #1e3c72;
+}
+
+header h2 {
+    margin-top: 5px;
+    font-weight: normal;
+    color: #555;
+}
+
+section {
+    margin-top: 25px;
+}
+
+h3 {
+    color: #2a5298;
+    border-left: 5px solid #2a5298;
+    padding-left: 10px;
+}
+
+.project-card {
+    background: #f4f7fc;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #ff6600;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.contact {
+    background: #1e3c72;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+</style>
+
 </head>
 <body>
 
+<div class="container">
+
+<header>
 <h1>Vineet Yadav</h1>
-<h2>Civil Engineer | GIS | Construction Project Management</h2>
+<h2>Civil Engineer | GIS Specialist | Construction Project Management</h2>
+</header>
 
+<section>
 <h3>About Me</h3>
-<p>I am a civil engineer with experience in GIS and construction project management.</p>
+<p>
+I am a civil engineer with experience in Geographic Information Systems (GIS) and construction project management. 
+I specialize in construction scheduling, spatial analysis, and project coordination using modern engineering and GIS tools.
+</p>
+</section>
 
-<h3>Projects</h3>
-<ul>
-<li>Construction Scheduling Project</li>
-<li>GIS Mapping Project</li>
-<li>Construction Estimation Project</li>
-</ul>
+<section>
+<h3>Main Project</h3>
 
+<div class="project-card">
+<h4>ArcGIS StoryMap Project</h4>
+<p>
+Developed an interactive ArcGIS StoryMap showcasing spatial analysis, mapping, and visualization using ArcGIS platform.
+</p>
+<a href="https://storymaps.arcgis.com/stories/a00457b0b06141a6a54fb1274f14bf92" target="_blank">
+View Project →
+</a>
+</div>
+
+</section>
+
+<section>
+<h3>Other Projects</h3>
+
+<div class="project-card">Construction Scheduling Project</div>
+<div class="project-card">GIS Mapping Project</div>
+<div class="project-card">Construction Estimation Project</div>
+
+</section>
+
+<section>
 <h3>Contact</h3>
-<p>Email: your@email.com</p>
+<div class="contact">
+Email: your@email.com
+</div>
+</section>
+
+<footer>
+© 2026 Vineet Yadav | Portfolio
+</footer>
+
+</div>
 
 </body>
 </html>
