@@ -1,170 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Vineet Yadav Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineet Kumar Yadav | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
 
-<style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: #333;
-}
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
 
-header {
-    text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #eee;
-}
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
-    color: #1e3c72;
-}
+        nav {
+            background-color: #16324a;
+            padding: 12px;
+            text-align: center;
+        }
 
-header h2 {
-    margin-top: 5px;
-    font-weight: normal;
-    color: #555;
-}
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-section {
-    margin-top: 25px;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-h3 {
-    color: #2a5298;
-    border-left: 5px solid #2a5298;
-    padding-left: 10px;
-}
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
 
-.project-card {
-    background: #f4f7fc;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
+        h2 {
+            color: #1f3a5f;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
 
-.project-card a {
-    text-decoration: none;
-    color: #1e3c72;
-    font-weight: bold;
-}
+        ul {
+            line-height: 1.8;
+        }
 
-.project-card a:hover {
-    color: #ff6600;
-}
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
 
-ul {
-    padding-left: 20px;
-}
+        .btn {
+            display: inline-block;
+            background-color: #1f3a5f;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
 
-.contact {
-    background: #1e3c72;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 15px;
-}
+        .btn:hover {
+            background-color: #16324a;
+        }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #777;
-    font-size: 14px;
-}
-</style>
-
+        footer {
+            background: #1f3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-
 <header>
-<h1>Vineet Yadav</h1>
-<h2>Civil Engineer | GIS Specialist | Construction Project Management</h2>
+    <h1>Vineet Kumar Yadav</h1>
+    <p>Civil Engineering | Construction Project Management | GIS Specialist</p>
+    <p>London, Ontario, Canada | vin334eet@gmail.com | +1 (437) 669-9436</p>
 </header>
 
-<section>
-<h3>About Me</h3>
-<p>
-I am a Civil Engineering graduate with postgraduate specialization in Construction Project Management and Geographic Information Systems (GIS). I bring a combination of technical site knowledge, digital tools expertise, and project coordination capability. I am passionate about infrastructure development, construction technology, and data-driven decision-making in construction projects.
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-Core Skills & Competencies
+<div class="container">
 
-Construction Project Coordination
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Resourceful and detail-oriented Civil Engineering and Construction Project Management professional with hands-on experience in surveying, estimation, project coordination, and GIS data management. Skilled in field data collection, quantity take-offs, cost estimation, and construction documentation with strong knowledge of safety regulations and project workflows.
+        </p>
+        <p>
+            I am passionate about infrastructure development, construction technology, and data-driven decision making in construction and engineering projects.
+        </p>
+    </section>
 
-Quantity Take-Off & Cost Estimation
+    <section id="skills">
+        <h2>Core Skills</h2>
+        <div class="skills-grid">
+            <div>Project Coordination</div>
+            <div>Quantity Take-Off & Estimation</div>
+            <div>Surveying (Total Station, GPS)</div>
+            <div>GIS Mapping & Spatial Analysis</div>
+            <div>Blueprint Interpretation</div>
+            <div>Construction Documentation</div>
+            <div>Ontario Building Code</div>
+            <div>Health & Safety Compliance</div>
+        </div>
 
-Surveying (Total Station, GPS, Auto Level)
+        <h3>Software</h3>
+        <ul>
+            <li>AutoCAD, Revit, Bluebeam Revu</li>
+            <li>ArcGIS Pro, QGIS</li>
+            <li>MS Project, SQL, MS Visual Studio</li>
+            <li>Microsoft Office Suite</li>
+        </ul>
+    </section>
 
-GIS Mapping & Spatial Data Analysis
+    <section id="experience">
+        <h2>Professional Experience</h2>
 
-Blueprint & Construction Documentation Interpretation
+        <h3>Junior Engineer / Project Coordinator</h3>
+        <p><strong>Ram Kumar Contractors Pvt Ltd | 2019 – 2020</strong></p>
+        <ul>
+            <li>Supervised daily site activities according to drawings and specifications</li>
+            <li>Managed survey layouts, alignments, and level verification</li>
+            <li>Performed quality inspections and safety compliance checks</li>
+            <li>Coordinated with subcontractors and suppliers</li>
+            <li>Prepared daily reports and documentation</li>
+        </ul>
 
-Ontario Building Code Knowledge
+        <h3>Trainee Engineer – Estimation & Construction</h3>
+        <p><strong>Ram Kumar Contractors Pvt Ltd | 2018 – 2019</strong></p>
+        <ul>
+            <li>Performed quantity take-offs and cost estimation</li>
+            <li>Reviewed tender and contract documents</li>
+            <li>Compared supplier and subcontractor quotations</li>
+            <li>Supported value engineering and risk analysis</li>
+        </ul>
 
-Health, Safety & Environmental Compliance
+        <h3>Trainee Engineer – Survey & GIS</h3>
+        <p><strong>Purbanchal Suppliers and Contractors | 2017 – 2018</strong></p>
+        <ul>
+            <li>Conducted topographic and boundary surveys</li>
+            <li>Collected GIS mapping data</li>
+            <li>Updated AutoCAD and GIS drawings</li>
+            <li>Maintained survey documentation</li>
+        </ul>
+    </section>
 
-Team Collaboration & Site Coordination
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Post Graduate Certificate – Construction Project Management | Fanshawe College | 2025</li>
+            <li>Post Graduate Certificate – Geographic Information Systems | Fanshawe College | 2024</li>
+            <li>Bachelor of Technology – Civil Engineering | 2017</li>
+        </ul>
+    </section>
 
-Problem Solving & Analytical Thinking
-</p>
-</section>
+    <section id="projects">
+        <h2>Key Projects</h2>
 
-<section>
-<h3>Main Project</h3>
+        <h3>GIS Story Map Project</h3>
+        <p>
+            Developed an interactive GIS Story Map using ArcGIS StoryMaps integrating spatial data, mapping analysis, and visual storytelling to present geographic insights and project findings. The project includes spatial data collection, analysis layers, visualization, and narrative storytelling for better geographic understanding.
+        </p>
+        <a class="btn" href="https://storymaps.arcgis.com/stories/a00457b0b06141a6a54fb1274f14bf92" target="_blank">View GIS Story Map Project</a>
 
-<div class="project-card">
-<h4>ArcGIS StoryMap Project</h4>
-<p>
-Developed an interactive ArcGIS StoryMap showcasing spatial analysis, mapping, and visualization using ArcGIS platform.
-</p>
-<a href="https://storymaps.arcgis.com/stories/a00457b0b06141a6a54fb1274f14bf92" target="_blank">
-View Project →
-</a>
+        <ul>
+            <li>Metro Station Project – Pre-engineered building structure support and design compliance</li>
+            <li>Green Building Implementation – Environmental sustainability study</li>
+            <li>Water Conservation Research – Environmental and drought management analysis</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: vin334eet@gmail.com</p>
+        <p>Phone: +1 (437) 669-9436</p>
+        <p>LinkedIn: linkedin.com/in/vineetyadav11</p>
+    </section>
+
 </div>
-
-</section>
-
-<section>
-<h3>Other Projects</h3>
-
-<div class="project-card">Construction Scheduling Project</div>
-<div class="project-card">GIS Mapping Project</div>
-<div class="project-card">Construction Estimation Project</div>
-
-</section>
-
-<section>
-<h3>Contact</h3>
-<div class="contact">
-Email: vin334eet@email.com
-</div>
-</section>
 
 <footer>
-© 2026 Vineet Yadav | Portfolio
+    <p>© 2026 Vineet Kumar Yadav | Portfolio</p>
 </footer>
-
-</div>
 
 </body>
 </html>
